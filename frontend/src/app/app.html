@@ -1,0 +1,20 @@
+<div class="shell">
+  <header class="topbar" *ngIf="auth.isAuthenticated()">
+    <div class="brand" routerLink="/pokedex">
+      <span class="dot"></span>
+      <strong>IPT Pokédex</strong>
+    </div>
+    <nav>
+      <a routerLink="/pokedex" routerLinkActive="active">Pokédex</a>
+      <a routerLink="/perfil" routerLinkActive="active">Perfil</a>
+    </nav>
+    <div class="user">
+      <span class="name">{{ (auth.user$ | async)?.name || 'Invitado' }}</span>
+      <button class="ghost" (click)="logout()">Salir</button>
+    </div>
+  </header>
+
+  <main class="view">
+    <router-outlet />
+  </main>
+</div>
