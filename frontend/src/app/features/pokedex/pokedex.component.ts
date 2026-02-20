@@ -23,7 +23,7 @@ interface PokemonCard {
           <p class="muted">
             Desliza horizontalmente para ver más Pokémones. Usa la búsqueda para filtrar por nombre
             y pulsa "Cargar más" cuando quieras extender la lista. Ahorita estas viendo los mas
-            populares.
+            populares. Haz click para ver sus caracteristicas :).
           </p>
           <div class="controls">
             <input
